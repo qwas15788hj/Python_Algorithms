@@ -1,7 +1,0 @@
-n = 1260
-count = 0
-array = [500, 100, 50, 10]
-for coin in array:
-  count += n // coin # n을 coin으로 나눈 몫을 count
-  n %= coin # n을 coin으로 나눈 나머지 값을 남은 n값에 삽입
-print(count)
