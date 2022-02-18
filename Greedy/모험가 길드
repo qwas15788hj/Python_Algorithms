@@ -1,0 +1,14 @@
+n = int(input())
+data = list(map(int, input().split()))
+
+data.sort()
+count = 0
+arr = []
+
+for i in range(n):
+  arr.append(data[i])
+  scare = max(arr)
+  if scare <= len(arr):
+    count += 1
+    arr = []
+print(count)
