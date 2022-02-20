@@ -1,0 +1,12 @@
+import sys
+n = int(sys.stdin.readline())
+arr = []
+for i in range(n):
+    arr.append(int(sys.stdin.readline()))
+arr.sort()
+
+max_w = 0
+for i in range(n):
+    if max_w < arr[i]*(len(arr)-i):
+        max_w = arr[i]*(len(arr)-i)
+print(max_w)
