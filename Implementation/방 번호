@@ -1,0 +1,9 @@
+import math
+n = input()
+arr = [0]*10
+
+for i in n:
+    arr[int(i)] += 1
+
+arr[6] = math.ceil((arr[6]+arr.pop())/2)
+print(max(arr))
